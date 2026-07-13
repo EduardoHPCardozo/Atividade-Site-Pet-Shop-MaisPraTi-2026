@@ -1,0 +1,17 @@
+:root {
+    /* Cores principais */
+    --color-titles-bg: #4ac5a4;
+    --color-buttons: #ff00a6;
+    --color-buttons-hover: #aa006e;
+    --color-background: #ffc802;
+    --color-titles-text: #ffffff;
+    --color-text: rgb(98, 98, 98);
+ 
+    /* Fontes */
+    --font-highlights: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --font-text: Arial, Helvetica, sans-serif;
+ 
+    /* Espaçamentos e formas */
+    --radius: 15px;
+    --gap-standard: 20px;
+}
