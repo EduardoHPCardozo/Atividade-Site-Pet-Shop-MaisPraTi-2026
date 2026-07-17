@@ -1,6 +1,6 @@
 /* Header Geral */
 header {
-    background-image: url('../Images/Background_Header.png');
+    background-image: url('../../Images/Background_Header.png');
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -33,90 +33,55 @@ header .logo #slogan {
     padding: 20px;
 }
 
-/* Header Info */
-header .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 50px;
-    gap: 10px;
-    margin-bottom: 20px;
-    padding-left: 50px;
-    color: var(--color-titles-text);
-    font-family: var(--font-highlights);
-    max-width: 400px;
-    max-height: 400px;
-}
-
-header .info h1 {
-    background-color: var(--color-titles-bg);
-    border-radius: var(--radius);
-    padding: 10px;
-}
-
-header .info .contact {
-    display: flex;
-    align-self: end;
-    align-items: center;
-    gap: 25px;
-}
-
-header .info .icons button {
-    border-radius: 50%;
-    border: 0;
-    transition: scale 0.3s ease;
-}
-
-header .info .icons button:hover {
-    scale: 105%;
-}
-
-header .info .icons img {
-    width: 60px;
-    height: 60px;
-}
-
 /* Header Navbar */
 header .menu {
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    align-items: end;
+    gap: var(--gap-standard);
     list-style: none;
     position: relative;
-    left: 32px;
 }
 
 header .menu .dropdown .dropdown_content {
     display: none;
     position: absolute;
-    width: 200px;
+    right: 100%;
+    top: 0;
 }
 
 header .menu .dropdown:hover .dropdown_content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 30px 0;
+    gap: 5px;
+    width: 200px;
+    padding-right: 5px;
+    align-items: end;
     list-style: none;
+
 }
 
-header .menu a,
-header .menu .dropdown .dropdown_content a {
+header .menu button,
+header .menu .dropdown .dropdown_content button {
     text-decoration: none;
     background-color: var(--color-buttons);
+    border: 0;
     font-family: var(--font-text);
     font-size: 20px;
     color: var(--color-titles-text);
     border-radius: var(--radius);
     padding: 15px;
+    transition: background 0.3s;
+    transition: scale 0.3s ease;
 }
- 
-header .menu .dropdown .dropdown_content a {
+
+header .menu .dropdown .dropdown_content button {
     font-size: 18px;
     padding: 10px;
 }
 
-header .menu a:hover,
-header .menu .dropdown_content a:hover {
+header .menu button:hover,
+header .menu .dropdown_content button:hover {
     background-color: var(--color-buttons-hover);
+    scale: 105%;
 }
