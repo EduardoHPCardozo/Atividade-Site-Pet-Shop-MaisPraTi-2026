@@ -1,6 +1,15 @@
-@import './variables.css';
-@import './reset.css';
-@import './grid.css';
-@import './header.css';
-@import './content.css';
-@import './aside.css';
+/* Global */
+@import './global/variables.css';
+@import './global/reset.css';
+@import './global/header.css';
+@import './global/footer.css';
+
+/* Landing */
+@import './pages/landing/grid.css';
+@import './pages/landing/landing.css';
+
+/* Login */
+@import './pages/login/login.css';
+
+/* Registration */
+@import  './pages/registration/registration.css';
