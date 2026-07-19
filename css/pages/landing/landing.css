@@ -1,21 +1,17 @@
 /* Main Geral */
 #landing-main {
     background-color: var(--color-background);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 15%;
-    gap: 40px;
 }
- 
+
 /* Carrossel */
 .carousel_adjustment {
+    padding: 40px 15%;
     width: 100%;
     position: relative;
 }
  
 .carousel_adjustment .carousel-item img {
-    max-height: 600px;
+    max-height: 500px;
     object-fit: cover;
 }
  
@@ -33,6 +29,15 @@
     background-color: var(--color-buttons);
 }
 
+.content-adjustment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 15%;
+}
+
+/* Titles */
 .content h1,
 .comments h1,
 .cta h1,
@@ -95,11 +100,12 @@
     background-color: var(--color-titles-text);
     border-radius: var(--radius);
     padding: var(--gap-standard);
+    flex: 1;
 }
  
 .content .content_cards .card img {
     width: 100%;
-    height: 50%;
+    height: 200px;
     object-fit: cover;
 }
  
@@ -135,7 +141,7 @@
     border-radius: var(--radius);
     margin-bottom: var(--gap-standard);
 }
- 
+
 .comments .card_comments h2 {
     color: var(--color-titles-bg);
 }
@@ -215,4 +221,32 @@
 .btn-contact:hover {
     background-color: var(--color-buttons-hover);
     scale: 105%;
+}
+
+@media (max-width: 1000px) {
+    .carousel_adjustment {
+        padding: 20px 0;
+    }
+
+    .carousel_adjustment .carousel-item img {
+        max-height: 200px;
+    }
+
+    .content_cards, .cta {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .content-adjustment {
+        padding: 40px 20px;
+    }
+
+    .form-contact {
+        padding: 20px;
+    }
+
+    .btn-contact {
+        width: 80%;
+    }
 }
